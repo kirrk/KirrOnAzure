@@ -1,41 +1,44 @@
 <?php
 /*
-Plugin Name: Alter singular post template slug
+Plugin Name: Active Plugin Dashboard Widget
 Plugin URI: kirr.azurewebsites.net
-Description: Add the category into the file template name
+Description: Add dashboard widget displaying active siteplugins
 Author: kkirr
 Version: 1.0
 */
 
-  add_filter ('single_template', 'kek_single_template');
+   $plugins = array();
+   $active = array();
 
-  function kek_single_template() {
-    global $wp_query;
+function active_plugins() {
+    global $plugins, $active;
 
-    /* check if we are viewing a singular post */
+    $plugins = get_plugins();
 
-    if (is_singular ('post')) {
-      /* get the post ID */
-      $post_id = $wp_query->get_queried_object_id();
-
-      /* get the post categories */
-      $terms = get_the_terms($post_id, 'category');
-
-      /* loop through the categoreis, adding slugs of the file name */
-      $templates = array();
-      foreach ($terms as $term)
-        $templates[] = "single-category-{$term->slug}.php";
-
-      /* check if the template exists */
-      $locate = locate_template($templates);
-
-      /* if a template was found, make it the new template */
-      if (!empty ($locate))
-        $template = $locate;
-
+    foreach ($plugins as $file => $data) {
+      // examine each plugin
+      if (is_plugin_active($file)) {
+        $active[$file] =
+          get_plugin_data(WP_PLUGIN_DIR. "/$file");
+      }
     }
+    wp_add_dashbaord_widget('active_plugins', 'Active Plugins', 'active_plugins_dashboard_widget');
+}
 
-    /* return the template file name */
-    return $template;
+function active_plugins_dashboard_widget() {
+   //Display our dashboard widget
+  global $plugins, $active;
+
+  print("<ul>");
+
+  foreach ($active as $plugin) {
+    print("<li>{$plugin['Title']} by {$plugin['Author']} | {$plugin['Version']}</li>");
   }
+
+  print("</ul>");
+}
+
+add_action('wp_dashbaord_setup', 'active_plugins');
+
+
 ?>
