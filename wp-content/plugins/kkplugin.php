@@ -20,7 +20,7 @@ function active_plugins() {
     //Examine each plugin
     if (is_plugin_active($file)) {
       $active[$file] =
-        get_plugin_data(WP_PLUGIN_DIR. "/file");
+        get_plugin_data(WP_PLUGIN_DIR. "/$file");
     }
   }
     wp_add_dashboard_widget('active_plugins', 'Active Plugins', 'active_plugins_dashboard_widget');
@@ -33,7 +33,7 @@ function active_plugins_dashboard_widget() {
   print("<ul>");
 
   foreach ($active as $plugin) {
-    print("<li>" . $plugin['Title'] . "by " . $plugin['Author'] . $plugin['Version'] . "</li>");
+    print("<li>" . $plugin['Title'] . " by " . $plugin['Author'] . $plugin['Version'] . "</li>");
   }
   print ("</ul>");
 }
