@@ -2,7 +2,7 @@
 /*
 Plugin Name: Active Plugin Dashboard Widget
 Plugin URI: kirr.azurewebsites.net
-Description: Add dashboard widget displaying active siteplugins
+Description: Add dashboard widget displaying active site plugins
 Author: kkirr
 Version: 1.0
 */
@@ -22,7 +22,7 @@ function active_plugins() {
           get_plugin_data(WP_PLUGIN_DIR. "/$file");
       }
     }
-    wp_add_dashbaord_widget('active_plugins', 'Active Plugins', 'active_plugins_dashboard_widget');
+    wp_add_dashboard_widget('active_plugins', 'Active Plugins', 'active_plugins_dashboard_widget');
 }
 
 function active_plugins_dashboard_widget() {
@@ -38,7 +38,7 @@ function active_plugins_dashboard_widget() {
   print("</ul>");
 }
 
-add_action('wp_dashbaord_setup', 'active_plugins');
+add_action('wp_dashboard_setup', 'active_plugins');
 
 
 ?>
