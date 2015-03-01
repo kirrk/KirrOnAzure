@@ -2,7 +2,7 @@
 /*
 Plugin Name: KK's Plugin
 Plugin URI: kirr.azurewebsites.net
-Description: Display active plugins on widget dashboard
+Description: Display active plugins on dashboard
 Author: kkirr
 Version: 1.0
 */
@@ -23,7 +23,7 @@ function active_plugins() {
         get_plugin_data(WP_PLUGIN_DIR. "/file");
     }
   }
-    wp_add_dashboard_widget('active_plugins', 'active Plugins', 'active_plugins_dashboard_widget');
+    wp_add_dashboard_widget('active_plugins', 'Active Plugins', 'active_plugins_dashboard_widget');
 }
 
 function active_plugins_dashboard_widget() {
@@ -33,7 +33,7 @@ function active_plugins_dashboard_widget() {
   print("<ul>");
 
   foreach ($active as $plugin) {
-    print("<li>{$plugin['Title']} by {$plugin['Author']} @ {$plugin['Version']}</li>");
+    print("<li>{$plugin['Title']} by {$plugin['Author']} {$plugin['Version']}</li>");
   }
   print ("</ul>");
 }
