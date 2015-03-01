@@ -33,7 +33,7 @@ function active_plugins_dashboard_widget() {
   print("<ul>");
 
   foreach ($active as $plugin) {
-    print("<li>{$plugin['Title']} by {$plugin['Author']} {$plugin['Version']}</li>");
+    print("<li>" . $plugin['Title'] . "by " . $plugin['Author'] . $plugin['Version'] . "</li>");
   }
   print ("</ul>");
 }
