@@ -2,7 +2,7 @@
 /*
 Plugin Name: KK's Plugin
 Plugin URI: kirr.azurewebsites.net
-Description: plugin fun
+Description: Display active plugins on widget dashboard
 Author: kkirr
 Version: 1.0
 */
@@ -35,7 +35,7 @@ function active_plugins_dashboard_widget() {
   foreach ($active as $plugin) {
     print("<li>{$plugin['Title']} by {$plugin['Author']} @ {$plugin['Version']}</li>");
   }
-  print ("</ul>")
+  print ("</ul>");
 }
 
 add_action('wp_dashboard_setup', 'active_plugins');
