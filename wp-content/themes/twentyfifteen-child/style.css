@@ -9,3 +9,8 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+
+* {
+	padding: 0;
+	margin: 0;
+}
