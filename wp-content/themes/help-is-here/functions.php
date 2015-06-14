@@ -124,6 +124,12 @@ function help_is_here_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'help_is_here_scripts' );
 
+function add_bootstrap () {
+ $boot = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">';
+ echo $boot;
+}
+
+add_action ('wp_head', 'add_bootstrap');
 /**
  * Implement the Custom Header feature.
  */
