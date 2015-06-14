@@ -114,6 +114,8 @@ add_action( 'widgets_init', 'help_is_here_widgets_init' );
 function help_is_here_scripts() {
 	wp_enqueue_style( 'help-is-here-style', get_stylesheet_uri() );
 
+	wp_enqueue_style('here-to-help-custom-styles', get_template_directory_uri() . '/css/here-to-help.css', '1.0.0', true);
+
 	wp_enqueue_script( 'help-is-here-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'help-is-here-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
