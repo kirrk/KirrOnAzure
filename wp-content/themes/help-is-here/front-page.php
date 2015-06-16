@@ -1,6 +1,7 @@
 <?php
 /**
- * The main front page template file.
+ * The main template file.
+ *
  *
  * @package help-is-here
  */
@@ -19,6 +20,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
