@@ -7,6 +7,7 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 .jumbotron {
   position: absolute;
   z-index: 0;
+  background-color: transparent;
 }
 div.previous {
   z-index: 1;
@@ -14,15 +15,6 @@ div.previous {
 div.current {
   z-index: 2;
 }
-img.help1 {
-  background: #ccc;
-}
-img.help2 {
-  background: #ff0003;
-}
-img.help3 {
-  background: #eee;
-}
-img.help4 {
-  background: #000;
+br.clear {
+  clear: both;
 }
