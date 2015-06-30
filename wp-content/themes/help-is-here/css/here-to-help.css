@@ -24,6 +24,11 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   max-width: 900px;
  }
 }
+@media screen and (max-width: 768px) {
+  .jumbotron img {
+  max-width: 600px;
+ }
+}
 @media screen and (max-width: 500px) {
   .jumbotron img {
     max-width: 500px;
