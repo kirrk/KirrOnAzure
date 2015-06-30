@@ -112,7 +112,6 @@ add_action( 'widgets_init', 'help_is_here_widgets_init' );
  * Enqueue scripts and styles.
  */
 
-}
 function help_is_here_scripts() {
 
 	 wp_deregister_script('jquery');
