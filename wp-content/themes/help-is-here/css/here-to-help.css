@@ -1,6 +1,9 @@
 a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   color: #0c5ab2;
 }
+.site-branding {
+  position: relative;
+}
 .contain-jumbo {
   margin: auto;
   height: 550px;
@@ -21,6 +24,10 @@ div.current {
 }
 br.clear {
   clear: both;
+}
+.title-wrap{
+  position: relative;
+  width: 100%;
 }
 .main-titles  {
   position: absolute;
