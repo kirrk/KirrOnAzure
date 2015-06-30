@@ -3,13 +3,15 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 }
 .contain-jumbo {
   margin: auto;
-  width: 1200px;
-  height: 500px;
+  height: 550px;
 }
 .jumbotron {
   position: absolute;
   z-index: 0;
   background-color: transparent;
+}
+.jumbotron img {
+  max-width: 1100px;
 }
 div.previous {
   z-index: 1;
