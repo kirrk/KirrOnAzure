@@ -18,3 +18,7 @@ div.current {
 br.clear {
   clear: both;
 }
+.main-titles  {
+  display: block;
+  position: relative;
+}
