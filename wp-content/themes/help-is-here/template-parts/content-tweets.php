@@ -1,6 +1,6 @@
 <?php
 session_start();
-require get_template_directory_uri() . "/twitteroauth/autoload.php";
+require get_template_directory_uri() . "/twitteroauth/autoload.php");
 
 $twitteruser = "kkirr2";
 $notweets = 3;
@@ -19,4 +19,5 @@ $connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $acces
 $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);
 
 echo json_encode($tweets);
+echo $tweets;
 ?>
