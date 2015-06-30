@@ -23,6 +23,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'help-is-here' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php if (is_front_page) { ?>
 		<div class="title-wrap">
 			<div class="main-titles">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle"><?php bloginfo( 'name' ); ?></a></h1>
@@ -38,7 +39,7 @@
 				<div class="jumbotron"><img class="help4" src=<?php echo get_template_directory_uri() . "/img/help4.jpg"; ?> /></div>
 		</div>
 	</div>
-
+<?php } ?>
 
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
