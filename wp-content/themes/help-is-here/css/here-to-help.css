@@ -1,3 +1,16 @@
 a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   color: #0c5ab2;
 }
+img.help1 {
+  z-index: 2;
+  background: #ccc;
+}
+img.help2 {
+  background: #ff0003;
+}
+img.help3 {
+  background: #eee;
+}
+img.help4 {
+  background: #000;
+}
