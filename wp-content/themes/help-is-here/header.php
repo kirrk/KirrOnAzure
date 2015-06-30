@@ -26,12 +26,13 @@
 		<div class="site-branding">
 
 			<div class="contain-jumbo">
-				<div class="jumbotron current"><img class="help1 pull-right" src=<?php echo get_template_directory_uri() . "/img/help1.jpg"; ?> /></div>
+				<div class="jumbotron current"><img class="help1" src=<?php echo get_template_directory_uri() . "/img/help1.jpg"; ?> /></div>
 				<div class="jumbotron"><img class="help2" src=<?php echo get_template_directory_uri() . "/img/help2.jpg"; ?> /></div>
 				<div class="jumbotron"><img class="help3" src=<?php echo get_template_directory_uri() . "/img/help3.jpg"; ?>  /></div>
 				<div class="jumbotron"><img class="help4" src=<?php echo get_template_directory_uri() . "/img/help4.jpg"; ?> /></div>
-		</div><!-- .site-branding -->
-	</div><!-- .contain-jumbo -->
+		</div>
+
+	</div>
 
 			<h1 class="site-title pull-right"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description pull-right"><?php bloginfo( 'description' ); ?></h2>
