@@ -6,7 +6,6 @@ jq(function(){
     setInterval("rotateJumbo()", 3000);
 });
 
-jq(document).ready(function($) {
 
 function rotateJumbo() {
   var curPhoto = jq('div.current');
@@ -22,4 +21,3 @@ function rotateJumbo() {
     };
 }
 
-});
