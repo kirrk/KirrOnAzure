@@ -26,7 +26,7 @@
 		<div class="site-branding">
 			<div class="jumbotron">
 				<div class="current">
-					<img class="help1 pull-right"  /></div>
+					<img class="help1 pull-right" src="img/help1.jpg"  /></div>
 				<div><img class="help2 pull-right" /></div>
 				<div><img class="help3 pull-right"  /></div>
 				<div><img class="help4 pull-right" /></div>
