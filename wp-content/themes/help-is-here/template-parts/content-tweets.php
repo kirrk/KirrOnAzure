@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 include("http://kkirr.azurewebsites.net/wp-content/themes/help-is-here/twitteroauth/autoload.php");
 
 $twitteruser = "kkirr2";
