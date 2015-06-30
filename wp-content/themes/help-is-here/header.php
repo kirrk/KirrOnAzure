@@ -23,7 +23,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'help-is-here' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<?php if (is_front_page) { ?>
+		<?php if (is_front_page()) { ?>
 		<div class="title-wrap">
 			<div class="main-titles">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle"><?php bloginfo( 'name' ); ?></a></h1>
