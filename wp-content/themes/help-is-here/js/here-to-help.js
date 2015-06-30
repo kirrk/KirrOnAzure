@@ -1,5 +1,3 @@
-jQuery(document).ready(function($) {
-
 var jq = $.noConflict();
 
 jq(function(){
@@ -7,6 +5,8 @@ jq(function(){
     //set function interval
     setInterval("rotateJumbo()", 3000);
 });
+
+jq(document).ready(function($) {
 
 function rotateJumbo() {
   var curPhoto = jq('div.current');
@@ -19,7 +19,7 @@ function rotateJumbo() {
     .animate({ opacity: 1.0}, 1000),
     function() {
       curPhoto.removeClass('previous');
-    }
+    };
 }
 
 });
