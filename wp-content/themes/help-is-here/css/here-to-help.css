@@ -1,10 +1,7 @@
 a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   color: #0c5ab2;
 }
-.contain-jumbo {
-  margin: auto;
-}
-.jumbotron {
+.jumbotron div {
   position: absolute;
   z-index: 0;
 }
