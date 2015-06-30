@@ -18,6 +18,6 @@ function rotateJumbo() {
     .animate({ opacity: 1.0}, 1000),
     function() {
       curPhoto.removeClass('previous');
-    };
+    });
 }
 
