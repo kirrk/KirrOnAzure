@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "http://kkirr.azurewebsites.net/wp-content/themes/help-is-here/twitteroauth/autoload.php";
+include("http://kkirr.azurewebsites.net/wp-content/themes/help-is-here/twitteroauth/autoload.php");
 
 $twitteruser = "kkirr2";
 $notweets = 3;
