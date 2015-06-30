@@ -25,11 +25,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<div class="jumbotron">
-				<img class="help1 pull-right"  />
-				<img class="help2 pull-right" />
-				<img class="help3 pull-right"  />
-				<img class="help4 pull-right" />
-
+				<div class="current">
+					<img class="help1 pull-right"  /></div>
+				<div><img class="help2 pull-right" /></div>
+				<div><img class="help3 pull-right"  /></div>
+				<div><img class="help4 pull-right" /></div>
+			</div>
 
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
