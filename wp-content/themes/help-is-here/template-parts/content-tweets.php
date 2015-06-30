@@ -19,5 +19,4 @@ $connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $acces
 $tweets = $connection->get("https://api.twitter.com/1.1/statuses/kkirr2.json?screen_name=".$twitteruser."&count=".$notweets);
 
 echo json_encode($tweets);
-echo $tweets;
 ?>
