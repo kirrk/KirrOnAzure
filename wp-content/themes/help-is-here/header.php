@@ -26,7 +26,7 @@
 		<div class="site-branding">
 			<div class="jumbotron">
 				<div class="current">
-					<img class="help1 pull-right" src="img/help1.jpg"  /></div>
+					<img class="help1 pull-right" src=<?php echo get_template_directory_uri() . "img/help1.jpg"; ?> /></div>
 				<div><img class="help2 pull-right" /></div>
 				<div><img class="help3 pull-right"  /></div>
 				<div><img class="help4 pull-right" /></div>
