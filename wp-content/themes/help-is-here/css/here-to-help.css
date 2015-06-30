@@ -3,6 +3,8 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 }
 .contain-jumbo {
   margin: auto;
+  width: 1200px;
+  height: 500px;
 }
 .jumbotron {
   position: absolute;
