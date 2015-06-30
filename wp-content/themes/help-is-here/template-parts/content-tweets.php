@@ -1,6 +1,6 @@
 <?php
 session_start();
-require get_template_directory_uri() . "/twitteroauth/autoload.php");
+require "../twitteroauth/autoload.php");
 
 $twitteruser = "kkirr2";
 $notweets = 3;
