@@ -12,7 +12,10 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 .jumbotron {
   position: absolute;
   z-index: 0;
-  background-color: #d1d9e6 !important;
+  background-color: #EFF0F1 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 1200px) {
 .jumbotron img {
