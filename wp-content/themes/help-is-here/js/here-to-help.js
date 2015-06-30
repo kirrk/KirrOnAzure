@@ -1,3 +1,5 @@
+jQuery(document).ready(function($) {
+
 var jq = $.noConflict();
 
 jq(function(){
@@ -19,3 +21,5 @@ function rotateJumbo() {
       curPhoto.removeClass('previous');
     }
 }
+
+});
