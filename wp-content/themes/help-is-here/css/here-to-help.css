@@ -5,7 +5,7 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   margin: auto;
 }
 .jumbotron {
-  postion: absolute;
+  position: absolute;
   z-index: 0;
 }
 div.previous {
