@@ -1,11 +1,15 @@
 a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   color: #0c5ab2;
 }
-div.current {
-  z-index: 2;
+.jumbotron div {
+  postion: absolute;
+  z-index: 0;
 }
 div.previous {
-  z-index: 0;
+  z-index: 1;
+}
+div.current {
+  z-index: 2;
 }
 img.help1 {
   background: #ccc;
