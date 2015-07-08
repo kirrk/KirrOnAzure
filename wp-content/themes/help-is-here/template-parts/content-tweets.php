@@ -21,7 +21,7 @@ $include_rts = false;
 
                 //links
 
-               // echo $tweet->text;
+                echo $tweet->text;
                 echo $tweets->text;
 
             ?></li>
