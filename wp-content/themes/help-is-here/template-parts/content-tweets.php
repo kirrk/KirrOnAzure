@@ -15,8 +15,4 @@ echo $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
              ->performRequest();
 
-$twitter = new TwitterAPIExchange($settings);
-echo $twitter->buildOauth($url, $requestMethod)
-             ->setPostfields($postfields)
-             ->performRequest();
 ?>
