@@ -13,7 +13,6 @@ $include_rts = false;
             ?>
     <ul>
 
-        <?php  echo $tweets;
         foreach ($tweets as $key => $tweet): ?>
             <li><?php
 
