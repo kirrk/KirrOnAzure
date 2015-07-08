@@ -12,7 +12,9 @@ $include_rts = false;
     $tweets = $connection->get('statuses/user_timeline', array('screen_name' => $kkirr2, 'count' => $nb_of_tweets, 'include_rts' => $include_rts));
             ?>
     <ul>
-        <?php  foreach ($tweets as $key => $tweet): ?>
+
+        <?php  echo $tweets;
+        foreach ($tweets as $key => $tweet): ?>
             <li><?php
 
                 //links
