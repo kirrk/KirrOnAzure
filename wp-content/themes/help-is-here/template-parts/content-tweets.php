@@ -6,6 +6,8 @@ $access_token = "337568622-GXvhtCEnq6D0FImnwXmaiUtKMDEj2UKMOF0pCuLO";
 $access_token_secret = "0IANdstX6sbj01BNViKKjukBAM37Ilz0vJa7WHC4fPvrV";
 $nb_of_tweets = 3;
 $include_rts = true;
+$twitteruser = "ConnectUpKC";
+
 
  $connection = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
 
@@ -20,9 +22,7 @@ $include_rts = true;
             <li><?php
 
                 //links
-
               echo $tweet->text;
-                //echo $tweets->text;
 
             ?></li>
         <?php endforeach ?>
