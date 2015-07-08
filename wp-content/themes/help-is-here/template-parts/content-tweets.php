@@ -17,7 +17,7 @@ $include_rts = false;
 
                 //links
 
-                echo $tweet;
+                echo $tweet->text;
 
             ?></li>
         <?php endforeach ?>
