@@ -7,7 +7,7 @@ $settings = array(
     'consumer_key' => "YWFZSU5Q6rCbTjjDkY1R7NW3A",
     'consumer_secret' => "NNKAGTfQMEe7L1Z7YOaKHPa8moMtoPXZwkfsfpaSEK3E9HSXl5"
 
-$url = 'https://api.twitter.com/1.1/blocks/create.json';
+$url = 'https://api.twitter.com/1.1/statuses/kkirr2.json';
 $requestMethod = 'POST';
 
 $postfields = array(
@@ -16,8 +16,8 @@ $postfields = array(
     'count' => '3'
 );
 
-** Perform the request and echo the response **/
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->buildOauth($url, $requestMethod)
-             ->setPostfields($po
+             ->setPostfields($postfields)
+             ->performRequest();
 ?>
