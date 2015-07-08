@@ -10,7 +10,8 @@ $include_rts = false;
  $connection = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
 
     //$tweets = $connection->get('statuses/user_timeline', array('screen_name' => $kkirr2, 'count' => $nb_of_tweets, 'include_rts' => $include_rts));
-    $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);
+    $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$nb_of_tweets."&include_rts=".$include_rts
+);
 
             ?>
     <ul>
@@ -20,7 +21,7 @@ $include_rts = false;
 
                 //links
 
-                echo $tweet->text;
+               // echo $tweet->text;
                 echo $tweets->text;
 
             ?></li>
