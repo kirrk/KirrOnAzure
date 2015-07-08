@@ -8,13 +8,12 @@ $settings = array(
     'consumer_secret' => "NNKAGTfQMEe7L1Z7YOaKHPa8moMtoPXZwkfsfpaSEK3E9HSXl5"
 
 $url = 'https://api.twitter.com/1.1/statuses/kkirr2.json';
-$requestMethod = 'POST';
-
-$postfields = array(
-    'screen_name' => 'kkirr2',
-    'skip_status' => '1',
-    'count' => '3'
-);
+$getfield = '?username=kkirr2&count=3';
+$requestMethod = 'GET';
+$twitter = new TwitterAPIExchange($settings);
+echo $twitter->setGetfield($getfield)
+             ->buildOauth($url, $requestMethod)
+             ->performRequest();
 
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->buildOauth($url, $requestMethod)
