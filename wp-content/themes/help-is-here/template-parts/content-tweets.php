@@ -21,8 +21,8 @@ $include_rts = true;
 
                 //links
 
-              //  echo $tweet->text;
-                echo $tweets->text;
+              echo $tweet->text;
+                //echo $tweets->text;
 
             ?></li>
         <?php endforeach ?>
