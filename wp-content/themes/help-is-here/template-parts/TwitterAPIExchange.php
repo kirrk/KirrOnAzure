@@ -343,4 +343,4 @@ class TwitterAPIExchange
         }
         return $this->buildOauth($url, $method)->performRequest(true, $curlOptions);
     }
-}
+} ?>
