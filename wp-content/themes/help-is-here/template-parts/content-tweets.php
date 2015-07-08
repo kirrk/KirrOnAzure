@@ -1,21 +1,23 @@
-<?php session_start();
-require_once ("http://kkirr.azurewebsites.net/wp-content/themes/help-is-here/twitteroauth/twitteroauth/twitteroauth.php");
+<?php require_once('TwitterAPIExchange.php');
 
-$twitteruser = "kkirr2";
-$notweets = 3;
-$consumerkey = "YWFZSU5Q6rCbTjjDkY1R7NW3A";
-$consumersecret = "NNKAGTfQMEe7L1Z7YOaKHPa8moMtoPXZwkfsfpaSEK3E9HSXl5";
-$accesstoken = "337568622-GXvhtCEnq6D0FImnwXmaiUtKMDEj2UKMOF0pCuLO";
-$accesstokensecret = "0IANdstX6sbj01BNViKKjukBAM37Ilz0vJa7WHC4fPvrV";
+//set tokens
+$settings = array(
+    'oauth_access_token' => "337568622-GXvhtCEnq6D0FImnwXmaiUtKMDEj2UKMOF0pCuLO",
+    'oauth_access_token_secret' => "0IANdstX6sbj01BNViKKjukBAM37Ilz0vJa7WHC4fPvrV",
+    'consumer_key' => "YWFZSU5Q6rCbTjjDkY1R7NW3A",
+    'consumer_secret' => "NNKAGTfQMEe7L1Z7YOaKHPa8moMtoPXZwkfsfpaSEK3E9HSXl5"
 
-function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
-  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
-  return $connection;
-}
+$url = 'https://api.twitter.com/1.1/blocks/create.json';
+$requestMethod = 'POST';
 
-$connection = getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
+$postfields = array(
+    'screen_name' => 'kkirr2',
+    'skip_status' => '1',
+    'count' => '3'
+);
 
-$tweets = $connection->get("https://api.twitter.com/1.1/statuses/kkirr2.json?screen_name=".$twitteruser."&count=".$notweets);
-
-echo json_encode($tweets);
+** Perform the request and echo the response **/
+$twitter = new TwitterAPIExchange($settings);
+echo $twitter->buildOauth($url, $requestMethod)
+             ->setPostfields($po
 ?>
