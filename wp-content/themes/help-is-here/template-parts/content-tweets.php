@@ -23,7 +23,7 @@ $twitteruser = "ConnectUpKC";
 
                 //links
               echo $tweet->text . "<br />";
-              echo '<src=" '.$tweet->user->profile_image_url.' " />';
+              echo '<img src=" '.$tweet->user->profile_image_url.' " />';
               echo $tweet->user->profile_image_url;
 
             ?></li>
