@@ -24,10 +24,18 @@ $twitteruser = "ConnectUpKC";
                 //links
               echo $tweet->text . "<br />";
               echo '<src=" '.$tweet->profile_image_url.' " />';
-              echo $tweet->profile_image_url_https;
               echo $tweet->profile_image_url;
-              echo $tweet->retweet_count;
 
             ?></li>
         <?php endforeach ?>
     </ul>
+<?php $image = $connection->get("https://twitter.com/kkirr2/profile_image?size=original"); ?>
+
+<ul>
+  <?php foreach ($profImage as $myImage => $ourImage): ?>
+  <li>
+     <?php echo $ourImage->profile_image_url; ?>
+   </li>
+   <?php foreach ?>
+ </ul>
+
