@@ -24,6 +24,9 @@ $twitteruser = "ConnectUpKC";
                 //links
               echo $tweet->text . "<br />";
               echo '<src=" '.$tweet->profile_image_url.' " />';
+              echo $tweet->profile_image_url_https;
+              echo $tweet->profile_image_url;
+              echo $tweet->retweet_count;
 
             ?></li>
         <?php endforeach ?>
