@@ -12,7 +12,6 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 .jumbotron {
   position: absolute;
   z-index: 0;
-  background-color: #f8f8e3 !important;
 }
 @media screen and (max-width: 1200px) {
 .jumbotron img {
