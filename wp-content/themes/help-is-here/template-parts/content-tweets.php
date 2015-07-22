@@ -26,9 +26,9 @@ $twitteruser = "ConnectUpKC";
               echo '<img src=" '.$tweet->user->profile_image_url.' " />';
 
         echo "<script type='text/javascript' async src='//platform.twitter.com/widgets.js'></script>";
-        echo "<a href='https://twitter.com/intent/tweet?in_reply_to=".$tweet->id_str.">Reply</a>";
-        echo "<a href='https://twitter.com/intent/retweet?tweet_id=463440424141459456'>Retweet</a>";
-        echo "<a href='https://twitter.com/intent/favorite?tweet_id=463440424141459456'>Favorite</a>";
+        echo "<a href='https://twitter.com/intent/tweet?in_reply_to=".$tweet->id_str."'>Reply</a>";
+        echo "<a href='https://twitter.com/intent/retweet?tweet_id=".$tweet->id_str."'>Retweet</a>";
+        echo "<a href='https://twitter.com/intent/favorite?tweet_id=".$tweet->id_str."'>Favorite</a>";
 
             ?></li>
         <?php endforeach ?>
