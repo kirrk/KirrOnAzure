@@ -30,6 +30,7 @@ $twitteruser = "ConnectUpKC";
     </ul>
 
 <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
-<a href="https://twitter.com/intent/tweet?in_reply_to=463440424141459456">Reply</a>
+<a href='https://twitter.com/intent/tweet?in_reply_to='.<?php $tweet->id;?>>Reply</a>
 <a href="https://twitter.com/intent/retweet?tweet_id=463440424141459456">Retweet</a>
 <a href="https://twitter.com/intent/favorite?tweet_id=463440424141459456">Favorite</a>
+s
