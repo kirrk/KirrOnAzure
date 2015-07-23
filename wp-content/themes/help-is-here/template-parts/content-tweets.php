@@ -11,20 +11,11 @@ $twitteruser = "ConnectUpKC";
 
  $connection = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
 
-//date format
-     function timeSince($time) {
-        $string = date ('D M y', mktime(0, 0, 0, date("m")  , date("d"), date("Y")));;
-         $since = time() - strtotime($time);
-
-
-        echo $string;
-        echo "\n";
-
-    }
 
     //$tweets = $connection->get('statuses/user_timeline', array('screen_name' => $kkirr2, 'count' => $nb_of_tweets, 'include_rts' => $include_rts));
     $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$nb_of_tweets."&include_rts=".$include_rts
 );
+    $date = new DateTme($tweet->created_at);
 
             ?>
     <ul>
@@ -33,7 +24,6 @@ $twitteruser = "ConnectUpKC";
             <li><?php
 
                 //links
-              $date = new DateTme($tweet->created_at);
               echo $date->format('M jS');
               echo '@'.$tweet->user->screen_name;
               echo '<img src=" '.$tweet->user->profile_image_url.' " />';
