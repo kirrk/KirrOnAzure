@@ -13,7 +13,7 @@ $twitteruser = "ConnectUpKC";
 
 //date format
      function timeSince($time) {
-        $string = date ("m", "d", "y", mktime(0, 0, 0, date("m")  , date("d"), date("Y")));;
+        $string = date ( mktime(0, 0, 0, date("m")  , date("d"), date("Y")));;
         // $since = time() - strtotime($time);
 
         // $string     = '';
