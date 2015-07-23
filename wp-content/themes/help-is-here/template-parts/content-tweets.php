@@ -38,7 +38,7 @@ $twitteruser = "ConnectUpKC";
 
         // $string = ($count == 1) ? '1 ' . $name . ' ago' : $count . ' ' . $name . 's ago';
 
-        return $string + " ";
+        echo $string + " ";
 
     }
 
