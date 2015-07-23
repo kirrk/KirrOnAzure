@@ -11,6 +11,37 @@ $twitteruser = "ConnectUpKC";
 
  $connection = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
 
+//date format
+     function timeSince($time) {
+
+        $since = time() - strtotime($time);
+
+        $string     = '';
+
+        $chunks = array(
+            array(60 * 60 * 24 * 365 , 'year'),
+            array(60 * 60 * 24 * 30 , 'month'),
+            array(60 * 60 * 24 * 7, 'week'),
+            array(60 * 60 * 24 , 'day'),
+            array(60 * 60 , 'hour'),
+            array(60 , 'minute'),
+            array(1 , 'second')
+        );
+
+        for ($i = 0, $j = count($chunks); $i < $j; $i++) {
+            $seconds = $chunks[$i][0];
+            $name = $chunks[$i][1];
+            if (($count = floor($since / $seconds)) != 0) {
+                break;
+            }
+        }
+
+        $string = ($count == 1) ? '1 ' . $name . ' ago' : $count . ' ' . $name . 's ago';
+
+        return $string;
+
+    }
+
     //$tweets = $connection->get('statuses/user_timeline', array('screen_name' => $kkirr2, 'count' => $nb_of_tweets, 'include_rts' => $include_rts));
     $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$nb_of_tweets."&include_rts=".$include_rts
 );
@@ -22,6 +53,7 @@ $twitteruser = "ConnectUpKC";
             <li><?php
 
                 //links
+              echo timeSince($tweet->created_at);
               echo '@'.$tweet->user->screen_name;
               echo '<img src=" '.$tweet->user->profile_image_url.' " />';
               echo $tweet->text . "<br />";
