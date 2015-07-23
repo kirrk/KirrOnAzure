@@ -23,7 +23,7 @@ $twitteruser = "ConnectUpKC";
             <li><?php
 
                 //links
-              $date = new DateTme($tweet->created_at);
+              $date = new DateTime($tweet->created_at);
               echo $date->format('M jS');
               echo '@'.$tweet->user->screen_name;
               echo '<img src=" '.$tweet->user->profile_image_url.' " />';
