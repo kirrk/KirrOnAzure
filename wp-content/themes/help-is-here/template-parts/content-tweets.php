@@ -22,8 +22,9 @@ $twitteruser = "ConnectUpKC";
             <li><?php
 
                 //links
-              echo $tweet->text . "<br />";
+              echo $tweet->screen_name;
               echo '<img src=" '.$tweet->user->profile_image_url.' " />';
+              echo $tweet->text . "<br />";
 
         echo "<script type='text/javascript' async src='//platform.twitter.com/widgets.js'></script>";
         echo "<a href='https://twitter.com/intent/tweet?in_reply_to=".$tweet->id_str."'>Reply</a>";
