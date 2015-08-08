@@ -17,6 +17,7 @@ $twitteruser = "ConnectUpKC";
 );
 
             ?>
+    <div class="tweets-help">
     <ul>
       <?php
         foreach ($tweets as $key => $tweet): ?>
@@ -38,4 +39,4 @@ $twitteruser = "ConnectUpKC";
             ?></li>
         <?php endforeach ?>
     </ul>
-
+  </div>

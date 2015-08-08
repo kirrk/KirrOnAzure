@@ -49,3 +49,9 @@ br.clear {
   top: 50px;
   left: 50px;
 }
+.tweets-help {
+  float: left;
+}
+.tweets-help {
+  list-style-type: none;
+}
