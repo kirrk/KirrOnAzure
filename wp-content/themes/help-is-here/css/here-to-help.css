@@ -55,3 +55,6 @@ br.clear {
 .tweets-help ul li {
   list-style-type: none;
 }
+.tweets-help ul li img {
+float: left;
+}
