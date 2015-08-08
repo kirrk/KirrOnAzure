@@ -52,6 +52,6 @@ br.clear {
 .tweets-help {
   float: left;
 }
-.tweets-help {
+.tweets-help ul li {
   list-style-type: none;
 }
