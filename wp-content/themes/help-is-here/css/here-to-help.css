@@ -66,3 +66,7 @@ br.clear {
 .tweets-help ul li img {
 float: left;
 }
+.reply {
+  background: url(../img/everything-sprite.png);
+  background-position: 0 0;
+}

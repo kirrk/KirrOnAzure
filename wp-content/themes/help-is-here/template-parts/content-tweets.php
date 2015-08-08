@@ -33,9 +33,9 @@ $twitteruser = "ConnectUpKC";
               echo $tweet->text . "<br />";
 
         
-        echo "<a href='https://twitter.com/intent/tweet?in_reply_to=".$tweet->id_str."'>Reply</a>";
-        echo "<a href='https://twitter.com/intent/retweet?tweet_id=".$tweet->id_str."'>Retweet</a>";
-        echo "<a href='https://twitter.com/intent/favorite?tweet_id=".$tweet->id_str."'>Favorite</a>";
+        echo "<a class='reply' href='https://twitter.com/intent/tweet?in_reply_to=".$tweet->id_str."'>Reply</a>";
+        echo "<a class='retweet' href='https://twitter.com/intent/retweet?tweet_id=".$tweet->id_str."'>Retweet</a>";
+        echo "<a class='favorite' href='https://twitter.com/intent/favorite?tweet_id=".$tweet->id_str."'>Favorite</a>";
 
             ?></li>
         <?php endforeach ?>
