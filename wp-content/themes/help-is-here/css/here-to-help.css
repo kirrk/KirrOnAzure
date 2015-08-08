@@ -55,7 +55,10 @@ br.clear {
 }
 .tweets-help ul li {
   list-style-type: none;
+}
+.tweets-help li {
   padding: 2em auto 1em 0;
+  margin: 1em;
 }
 .tweets-help ul li img {
 float: left;
