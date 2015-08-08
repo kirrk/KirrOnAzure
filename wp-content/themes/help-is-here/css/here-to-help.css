@@ -67,6 +67,6 @@ br.clear {
 float: left;
 }
 .reply {
-  background: url(../img/everything-sprite.png);
+  background: url(../img/everything-sprite.png) no-repeat;
   background-position: 5px 5px;
 }
