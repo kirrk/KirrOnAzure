@@ -82,13 +82,13 @@ float: left;
   background: url(../img/retweet.png) no-repeat 0 0;
 }
 .retweet:hover {
-  background: url(../img/retweet-sprite.png) no-repeat -15px 0;
+  background: url(../img/retweet_hover.png) no-repeat -17px 0;
   text-decoration: none;
 }
 .favorite {
   background: url(../img/favorite.png) no-repeat 0 0;
 }
 .favorite:hover {
-  background: url(../img/favorite-sprite.png) no-repeat -15px 0;
+  background: url(../img/favorite_hover.png) no-repeat -15px 0;
   text-decoration: none;
 }
