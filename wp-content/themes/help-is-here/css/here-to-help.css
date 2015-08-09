@@ -97,4 +97,9 @@ float: left;
 /* site footer */
 .site-footer {
   clear: both;
+  padding: 1em;
+  margin: 2em 0 0;
+  background: #eee;
+  width: 100%;
+  border-top: thin 1px #ddd;
 }
