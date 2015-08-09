@@ -55,6 +55,7 @@ br.clear {
 }
 .tweets-help ul li a {
   padding: 0 1em 0 1em;
+  margin: 1em;
 }
 .tweets-help ul li {
   list-style-type: none;
@@ -67,9 +68,9 @@ br.clear {
 float: left;
 }
 .reply {
-  background: url(../img/reply-sprite.png) no-repeat 0 0;
+  background: url(../img/reply.png) no-repeat 0 0;
 }
 .reply:hover {
   background: url(../img/reply-sprite.png) no-repeat 10px 0;
-
+  
 }
