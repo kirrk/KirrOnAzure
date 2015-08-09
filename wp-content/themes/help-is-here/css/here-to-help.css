@@ -67,6 +67,9 @@ br.clear {
 float: left;
 }
 .reply {
-  background: url(../img/everything-sprite.png) no-repeat;
-  background-position: 5px 5px;
+  background: url(../img/reply-sprite.png) no-repeat 0 0;
+}
+.reply:hover {
+  background: url(../img/reply-sprite.png) no-repeat 10px 0;
+
 }
