@@ -89,6 +89,6 @@ float: left;
   background: url(../img/favorite.png) no-repeat 0 0;
 }
 .favorite:hover {
-  background: url(../img/favorit-sprite.png) no-repeat -15px 0;
+  background: url(../img/favorite-sprite.png) no-repeat -15px 0;
   text-decoration: none;
 }
