@@ -8,10 +8,14 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 .contain-jumbo {
   margin: auto;
   height: 550px;
+  width: 100%;
+  background: transparent;
 }
 .jumbotron {
   position: absolute;
   z-index: 0;
+  width: 100%;
+  background: transparent;
 }
 @media screen and (max-width: 1200px) {
 .jumbotron img {
@@ -72,5 +76,12 @@ float: left;
 }
 .reply:hover {
   background: url(../img/reply-sprite.png) no-repeat -15px 0;
+  text-decoration: none;
+}
+.tweet {
+  background: url(../img/retweet.png) no-repeat 0 0;
+}
+.tweet:hover {
+  background: url(../img/retweet-sprite.png) no-repeat -15px 0;
   text-decoration: none;
 }
