@@ -15,7 +15,7 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   position: absolute;
   z-index: 0;
   width: 100%;
-  background: transparent;
+  background: transparent !important;
 }
 @media screen and (max-width: 1200px) {
 .jumbotron img {
@@ -78,10 +78,17 @@ float: left;
   background: url(../img/reply-sprite.png) no-repeat -15px 0;
   text-decoration: none;
 }
-.tweet {
+.retweet {
   background: url(../img/retweet.png) no-repeat 0 0;
 }
-.tweet:hover {
+.retweet:hover {
   background: url(../img/retweet-sprite.png) no-repeat -15px 0;
+  text-decoration: none;
+}
+.favorite {
+  background: url(../img/favorite.png) no-repeat 0 0;
+}
+.favorite:hover {
+  background: url(../img/favorit-sprite.png) no-repeat -15px 0;
   text-decoration: none;
 }
