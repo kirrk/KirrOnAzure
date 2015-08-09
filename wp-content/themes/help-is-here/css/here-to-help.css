@@ -71,6 +71,6 @@ float: left;
   background: url(../img/reply.png) no-repeat 0 0;
 }
 .reply:hover {
-  background: url(../img/reply-sprite.png) no-repeat 10px 0;
-  
+  background: url(../img/reply-sprite.png) no-repeat -15px 0;
+  text-decoration: none;
 }
