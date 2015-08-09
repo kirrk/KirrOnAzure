@@ -92,3 +92,9 @@ float: left;
   background: url(../img/favorite_hover.png) no-repeat 0 0;
   text-decoration: none;
 }
+
+
+/* site footer */
+.site-footer {
+  clear: both;
+}
