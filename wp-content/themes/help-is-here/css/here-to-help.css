@@ -53,9 +53,14 @@ br.clear {
   top: 50px;
   left: 50px;
 }
+.main-navigation {
+  margin: 2em 0 0;
+  padding: 1em;
+}
 .tweets-help {
   float: left;
   max-width: 800px;
+  margin: 0 0 4em;
 }
 .tweets-help ul li a {
   padding: 0 1em 0 1.7em;
