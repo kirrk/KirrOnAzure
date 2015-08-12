@@ -28,8 +28,9 @@
 			<div class="main-titles">
 
 			<h1 class="site-title">
-				<?php if(get_field('h1_field')) {
-				echo the_field('h1_field');
+				<?php if(get_field('h1_field')) {	?>			
+				<a href="<?php echo the_field('h1_field'); ?>" rel="home" class="siteTitle">
+				<?phpbloginfo( 'name' ); ?></a>				
 				} ?>
 			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
