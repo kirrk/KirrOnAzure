@@ -26,7 +26,12 @@
 		<?php if (is_front_page()) { ?>
 		<div class="title-wrap">
 			<div class="main-titles">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle"><?php bloginfo( 'name' ); ?></a></h1>
+
+			<h1 class="site-title">
+				<?php if(get_field('h1_field')) {
+				echo the_field('h1_field');
+				} ?>
+			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
   </div>
