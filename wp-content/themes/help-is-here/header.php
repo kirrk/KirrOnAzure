@@ -29,8 +29,8 @@
 
 			<h1 class="site-title">
 				<?php if(get_field('h1_field')) {	?>			
-				<a href="<?php echo the_field('h1_field'); ?>" rel="home" class="siteTitle">
-				<?php bloginfo( 'name' ); ?></a>				
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteTitle">
+				<?php echo the_field('h1_field'); ?></a>				
 				<?php } ?>
 			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
