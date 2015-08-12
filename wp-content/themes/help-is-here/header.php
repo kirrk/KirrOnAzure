@@ -33,7 +33,7 @@
 				<?php echo the_field('h1_field'); ?></a>				
 				<?php } ?>
 			</h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h2 class="site-description"><?php if(get_field( 'sub_head' )) { echo the_field('sub_head'); } ?></h2>
 		</div>
   </div>
 
