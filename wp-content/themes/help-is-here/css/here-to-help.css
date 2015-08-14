@@ -1,31 +1,35 @@
 a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
   color: #0c5ab2;
 }
+
 .site-branding {
   position: relative;
   width: 100%;
 }
+
 .contain-jumbo {
   margin: -5em auto auto;
   height: 550px;
   width: 100%;
   background: transparent;
 }
+
 .jumbotron {
   position: absolute;
   z-index: 0;
   width: 100%;
   background: transparent !important;
 }
+
 @media screen and (max-width: 1200px) {
-.jumbotron img {
-  max-width: 1100px;
- }
+  .jumbotron img {
+    max-width: 1100px;
+  }
 }
 @media screen and (max-width: 992px) {
   .jumbotron img {
-  max-width: 900px;
- }
+    max-width: 900px;
+  }
 }
 @media screen and (max-width: 600px) {
   .jumbotron img {
@@ -35,71 +39,87 @@ a.siteTitle, a.siteTitle:hover, a.siteTitle:visited {
 div.previous {
   z-index: 1;
 }
+
 div.current {
   z-index: 2;
 }
+
 br.clear {
   clear: both;
 }
-.title-wrap{
+
+.title-wrap {
   position: relative;
   width: 100%;
   margin: 0 5em 0;
 }
-.main-titles  {
+
+.main-titles {
   position: absolute;
   z-index: 5;
   bottom: 0;
   top: 50px;
   left: 50px;
 }
+
 .main-navigation {
   margin: 2em 0 0;
 }
+
 .main-navigation li {
   padding: 1em;
 }
+
 .tweets-help {
   float: left;
   max-width: 800px;
   margin: 0 0 4em;
 }
+
 .tweets-help ul li a {
   padding: 0 1em 0 1.7em;
   margin: 1em;
 }
+
 .tweets-help ul li {
   list-style-type: none;
 }
+
 .tweets-help li {
   padding: 2em auto 1em 0;
   margin: 2em 0 0;
 }
+
 .tweets-help ul li img {
-float: left;
+  float: left;
 }
+
 .reply {
   background: url(../img/reply.png) no-repeat 0 0;
 }
+
 .reply:hover {
   background: url(../img/reply-sprite.png) no-repeat -15px 0;
   text-decoration: none;
 }
+
 .retweet {
   background: url(../img/retweet.png) no-repeat 0 0;
 }
+
 .retweet:hover {
   background: url(../img/retweet_hover.png) no-repeat 0 0;
   text-decoration: none;
 }
+
 .favorite {
   background: url(../img/favorite.png) no-repeat 0 0;
 }
+
 .favorite:hover {
   background: url(../img/favorite_hover.png) no-repeat 0 0;
   text-decoration: none;
 }
-
 
 /* site footer */
 .site-footer {
