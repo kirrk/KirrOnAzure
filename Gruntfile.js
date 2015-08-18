@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           sourcemap: 'none',
         },
         files: {
-          'css/here-to-help.css': 'scss/style.scss'
+          'wp-content/themes/help-is-here/css/here-to-help.css': 'wp-content/themes/help-is-here/scss/style.scss'
         }
       }
     },
