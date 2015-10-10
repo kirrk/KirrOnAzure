@@ -168,4 +168,4 @@ require get_template_directory() . '/inc/jetpack.php';
 
 /** load custom template tags */
 
-require get_template_directory() . '/inc/kk-custom-template-tags.php'
+require get_template_directory() . '/inc/kk-custom-template-tags.php';
