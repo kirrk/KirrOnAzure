@@ -2,7 +2,7 @@
 
 //add custom meta boxes
 
-  add_action ( 'add_meta_boxes', 'help_mbe_create' );
+  add_action ( 'add_meta_box', 'help_mbe_create' );
 
   function help_mbe_create() {
       //create the custom meta box within posts
