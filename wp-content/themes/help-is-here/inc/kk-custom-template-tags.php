@@ -52,7 +52,7 @@ function help_mbe_save_meta( $post_id ) {
     //save the metadata
     update_post_meta( $post_id, '_help_mbe_name',
       strip_tags( $_POST['help_mbe_name'] ) );
-    update_post_meta( $post_id, '_help_mbe_costume'
+    update_post_meta( $post_id, '_help_mbe_costume',
       strip_tags ( $_POST['help_mbe_costume'] ) );
 
   }
