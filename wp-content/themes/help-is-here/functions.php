@@ -42,7 +42,7 @@ function help_is_here_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'help-is-here' ),
+		'primary' => esc_html__( 'Primary Menu', 'help-is-heƒre' ),
 	) );
 
 	/*
@@ -165,3 +165,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/** load custom template tags */
+
+require get_template_directory() . '/inc/kk-custom-template-tags.php'
